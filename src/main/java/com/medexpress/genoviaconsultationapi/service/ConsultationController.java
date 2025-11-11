@@ -11,6 +11,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/// The REST controller which will respond to incoming requests
 @RestController
 @RequestMapping("/api/consultation")
 public class ConsultationController {
@@ -39,6 +40,7 @@ public class ConsultationController {
             EligibilityResponse response = service.processAnswers(answers);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
+            // TODO: Use a more enhanced Error Classification Technique, may be using standardised error codes between Front End and Back End
             logger.error("POST /api/consultation/answers caused internal server error.", e);
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Something went wrong");
         }

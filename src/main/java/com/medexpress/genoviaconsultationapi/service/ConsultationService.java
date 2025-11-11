@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+///  Main business logic for the Consultation API.
 @Service
 public class ConsultationService {
 

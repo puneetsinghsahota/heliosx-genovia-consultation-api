@@ -10,15 +10,20 @@ This solution was developed using **Java 17** and **Spring Boot (v3.5.7)**.
 ### Prerequisites
 1. JDK 17 or higher
 2. Maven
+3. IntelliJ (optional)
 
-### Steps tp run the Service
-
+### Steps to run the Service
 1. Start the application directly from Command Line Terminal or inside an IDE (preferrably IntelliJ)  or using Maven through the below given command:
 ```
 ./mvnw spring-boot:run
 ```
 
 2. The application will start on port `8080`.
+
+### Command to run unit tests
+```
+./mvnw test
+```
 
 ## Application Exposes 2 Endpoints:
 ### Endpoint 1 : GET http://localhost:8080/api/consultation/questions
